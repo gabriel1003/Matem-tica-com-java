@@ -14,7 +14,7 @@ public class CalculadoraDeConversao {
             System.out.println("\tBem-vindo ao seu conversor de valores numéricos. \n" +
                     "\tDigite (1) para converter de decimal para hexadecimal.\n" +
                     "\t(2) para converter de decimal para binário.\n" +
-                    "\t(3) para converter para otadecimal.\n"+
+                    "\t(3) para converter para octal.\n"+
                     "Ou digite (0) para sair." +
                     "Qual é a sua opção?");
             op = sc.nextInt();
@@ -71,8 +71,11 @@ public class CalculadoraDeConversao {
                                 break;
                             }
 
-                            OtaDecimal od = new OtaDecimal(valor);
-                            System.out.println(od.getValorOtaDecimal());
+                            Octal od = new Octal(valor);
+                            System.out.println(od.getValorOctal
+
+());
+
                         } catch (InputMismatchException e) {
                             System.out.println("Digite um valor inteiro");
                             sc.next();
