@@ -26,6 +26,7 @@ public class Calculadora {
 
             //Se o usuario digitar 0 ele sai do loop.
             if (op == 0) {
+                System.out.println("Até a próxima!");
                 break;
             }
 
