@@ -1,16 +1,13 @@
 package arredondamento_de_valores.usando_poo;
 
-public class Ceiling {
-    private double valor;
-    private int ceiling;
+//O método ceiling arredonda um valor para o maior inteiro aproximádo.
 
-    public Ceiling(double valor) {
-        this.valor = valor;
-        this.ceiling = (int) Math.ceil(valor);
-    }
+public class Ceiling implements Arredondamento{
 
+    //Vamos implementar o método arredondar da interface Arredondamento.
     @Override
-    public String toString() {
-        return "\tO resultado da sua operação é: " + String.format("%.2f. ", valor) + "\tE arredondando usando o ceiling é: " + ceiling;
+    public double arredondar(double valor) {
+        return Math.ceil(valor);
     }
+
 }

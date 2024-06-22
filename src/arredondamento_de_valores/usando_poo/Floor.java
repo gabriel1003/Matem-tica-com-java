@@ -1,16 +1,11 @@
 package arredondamento_de_valores.usando_poo;
 
-public class Floor {
-    private int floor;
-    private double valor;
+//O método Floor arredonda um valor para o maior inteiro e é amplamente usado para criptografia.
 
-    public Floor(double valor) {
-        this.valor = valor;
-        this.floor = (int) Math.floor(valor);
-    }
+public class Floor implements Arredondamento {
 
-@Override
-    public String toString() {
-        return "\tO valor da sua operação é: " +floor;
+    //Vamos implementar o método arredondar da interface Arredondamento.
+    public double arredondar(double valor) {
+        return Math.floor(valor);
     }
 }
